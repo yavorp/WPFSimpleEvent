@@ -1,0 +1,20 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginApplication"
+        xmlns:Week10a="clr-namespace:Week10a;assembly=Week10a" x:Class="LoginApplication.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="213*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="52*"/>
+        </Grid.RowDefinitions>
+        <Week10a:UserControl1  Name="LoginUserControl" HorizontalAlignment="Left" Username="Enter username" Password="Somepassword"  Height="197" Margin="10,10,0,0" LoginOK="OnLogin"   VerticalAlignment="Top" Width="497"/>
+        <Label Name="lblUsername" Grid.Row="1" />
+        <Label Name="lblPassword" Grid.Row="2" />
+    </Grid>
+</Window>
